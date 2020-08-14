@@ -15,8 +15,8 @@ It is the final user's responsibility to obey all applicable local, state and fe
 The author assume no liability and are not responsible for any misuse or damage caused by this program.
 
 The CSS and Design is powered by Skeleton. (Actually a fork of it).
-Skeleton CSS: https://github.com/dhg/Skeleton
-Skeleton with Nav-Bar: https://github.com/rotaercz/skeleton-with-nav-menu
+Skeleton CSS: <a href="https://github.com/dhg/Skeleton"> https://github.com/dhg/Skeleton</a>
+Skeleton with Nav-Bar: <a href="https://github.com/rotaercz/skeleton-with-nav-menu">https://github.com/rotaercz/skeleton-with-nav-menu</a>
 
 ## Support
 Wanna support me keep losing brain-cells while creating this? Then go ahead and buy me a coffee: <a href="ethereum:0x1fb88987663643BE5c689dDb99B1498765c1FaBB">0x1fb88987663643BE5c689dDb99B1498765c1FaBB<a>
