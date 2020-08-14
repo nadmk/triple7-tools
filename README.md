@@ -4,8 +4,6 @@ A Random toolkit of completely useless tools except if you wanna extort someone.
 ## About
 Triple7 Tools: A Random toolkit of completely useless tools except if you wanna extort someone. DO NOT DO THIS! Just use them for fun. Written in PHP because i am still trying to learn this god-damn stupid language.
 
-No Database file yet wait for that.
-
 ## Tools:
 To be updated...
 ## License
