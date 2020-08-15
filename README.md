@@ -1,5 +1,5 @@
 # triple7-tools
-A Random toolkit of completely useless tools except if you wanna extort someone. DO NOT DO THIS! Just use them for fun. Version Alpha 0.0.6
+A Random toolkit of completely useless tools except if you wanna extort someone. DO NOT DO THIS! Just use them for fun. Version Alpha 0.0.7
 
 ## About
 Triple7 Tools: A Random toolkit of completely useless tools except if you wanna extort someone. DO NOT DO THIS! Just use them for fun. Written in PHP because i am still trying to learn this god-damn stupid language.
@@ -21,7 +21,7 @@ Skeleton CSS: <a href="https://github.com/dhg/Skeleton"> https://github.com/dhg/
 Skeleton with Nav-Bar: <a href="https://github.com/rotaercz/skeleton-with-nav-menu">https://github.com/rotaercz/skeleton-with-nav-menu</a>
 
 ## Support
-Wanna support me keep losing brain-cells while creating this? Then go ahead and buy me a coffee: <a href="ethereum:0x1fb88987663643BE5c689dDb99B1498765c1FaBB">0x1fb88987663643BE5c689dDb99B1498765c1FaBB<a>
+Wanna support me keep losing brain-cells while creating this? Then go ahead and buy me a coffee: <a href="0x1fb88987663643BE5c689dDb99B1498765c1FaBB">0x1fb88987663643BE5c689dDb99B1498765c1FaBB<a>
 <p> Thank you :) </p>
 
 NOW FUCK OFF

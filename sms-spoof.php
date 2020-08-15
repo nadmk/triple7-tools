@@ -10,7 +10,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 if(empty($_SESSION['status'])){
     $_SESSION['status'] = " ";
 }
-
+$sql = "SELECT * FROM `sms_log` WHERE `from` ='".$_SESSION["username"]."'";
+require_once 'config.php';
 ?>
 <html lang="en">
 <head>
@@ -32,7 +33,7 @@ if(empty($_SESSION['status'])){
 
 <!-- The above form looks like this -->
 <form action="components/sms-send.php" method="GET" align="center" style="margin-left: 35%; margin-right: 35%;">
-    <h3> SMS Spoof: Send an Anonymous SMS anywhere on the planet!</h3>
+    <h3 style="margin-top: 5%"> SMS Spoof: Send an Anonymous SMS anywhere on the planet!</h3>
     <p>(Not Really Anonymous someone put their details for the SMS Gateway but anyway)</p>
     <p style="color: darkcyan;">Status: <?php echo $_SESSION['status'];
     $_SESSION['status'] = "";
@@ -51,9 +52,32 @@ if(empty($_SESSION['status'])){
     <label for="message">Message:</label>
     <textarea class="u-full-width" accept-charset="UTF-8" placeholder="Hi Dave …" name="message" id="message"></textarea>
     <input class="button-primary" type="submit" value="Send">
-    <p>
-    <i>Please do not use the service for illegal purposes. We have the right to suspend the Service at any time.</i>
-    </p>
+    <hr>
+    <h3>Previous messages:</h3>
+    <table class="u-full-width">
+        <thead>
+        <tr>
+            <th>Time</th>
+            <th>Destination</th>
+            <th>CallerID</th>
+            <th>Message</th>
+        </tr>
+        </thead>
+        <?php
+        $response = mysqli_query($link, $sql);
+        while ($row = $response->fetch_assoc()) {
+            echo '<tr>';
+            echo '<tbody>';
+            echo '<td>'.$row['timestamp'].'</td>';
+            echo '<td>'.$row['to'].'</td>';
+            echo '<td>'.$row['callerID'].'</td>';
+            echo '<td>'.$row['message'].'</td>';
+            echo '</tr>';
+        }
+        ?>
+        </tbody>
+    </table>
+
 </form>
 
 

@@ -1,7 +1,6 @@
 <?php
 // Initialize the session
 session_start();
-
 // Check if the user is logged in, if not then redirect him to login page
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: index.php");
@@ -28,15 +27,33 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 <div class="container">
     <div align="center">
-    <h3>Welcome to Triple7 Online Swiss Army Knife.</h3>
+    <h3 style="margin-top: 5%">Welcome to Triple7 Online Swiss Army Knife.</h3>
     <p>Are you ready for your next extorsion or/and you want to be creepy to random people? You are in the right place!</p>
     </div>
-    <div class="row" style="margin-left: 25%; margin-right: 25%">
-        <div align="justify" class="one-half column" style="margin-top: 5%">
+    <div align="center" class="row" >
+        <div  class="five columns" >
             <h4 align="">Online tools:</h4>
-            <p> To be added.... </p>
+            <ul>
+                <li>
+                    Phone Tools:
+                    <ul>
+                        <li>Caller Spoofing</li>
+                        <li>SMS Spoofing</li>
+                    </ul>
+                </li>
+                <li>Cryptography</li>
+                <li>And more to come!</li>
+            </ul>
         </div>
-        <div class="one-half column" style="margin-top: 5%">1/2</div>
+        <div class="seven columns">
+            <h4 align="">Integrated Services:</h4>
+            <ul>
+                <li>Gateway API</li>
+                <li>Twilio</li>
+                <li>And more to come!</li>
+            </ul>
+
+        </div>
     </div>
 </div>
 <hr>
